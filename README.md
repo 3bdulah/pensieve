@@ -31,6 +31,9 @@
 User message
      │
      ▼
+[Greeting / self-question check] ──YES──► Return self-introduction (no API call)
+     │ NO
+     ▼
 [Jailbreak check] ──YES──► "I cannot answer that.."
      │ NO
      ▼
@@ -40,7 +43,8 @@ User message
      ▼
 [FAISS Index 2 — full knowledge base]
  Retrieve top 5 most relevant chunks
-     │
+ context empty? ──YES──► "I cannot answer that.."
+     │ NO
      ▼
 [Qwen LLM API]
  system prompt + context + history + user message
@@ -48,6 +52,8 @@ User message
      ▼
  Answer returned to user
 ```
+
+![Pensieve Flow Diagram](report/pensieve_flow.png)
 
 **Two FAISS indexes:**
 
@@ -168,7 +174,7 @@ All configuration is in `chatbot.py` constants:
 | --- | -------------------------------------------------- | --------------------------------------------- |
 | 1   | Only answer questions related to data              | FAISS retrieval + system prompt rule #1       |
 | 2   | Say "I cannot answer that.." if answer not in data | System prompt rule #1 & #6                    |
-| 3   | Answer greetings and self-questions                | System prompt rule #2                         |
+| 3   | Answer greetings and self-questions                | `is_greeting()` / `is_self_question()` shortcut before FAISS or API |
 | 4   | Resilient to jailbreak / injection                 | 17 regex patterns + system prompt rules #3–#4 |
 | 5   | Remember last N questions                          | `MAX_HISTORY=6` passed with every API call    |
 | 6   | Ignore format manipulation                         | Regex + system prompt rule #5                 |
