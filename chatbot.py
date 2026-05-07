@@ -1,5 +1,5 @@
 """
-chatbot.py — Core chatbot logic for The Oracle of Hogwarts.
+chatbot.py — Core chatbot logic for Pensieve.
 
 Flow:
   1. Jailbreak detection (regex) — blocks injection attempts before any processing

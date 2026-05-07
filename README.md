@@ -1,4 +1,4 @@
-# 🪄 The Oracle of Hogwarts — Harry Potter Chatbot
+# 🪄 Pensieve — Harry Potter Chatbot
 
 > A retrieval-augmented chatbot that answers questions strictly from a Harry Potter knowledge base, powered by dual FAISS indexing and the Qwen LLM.
 

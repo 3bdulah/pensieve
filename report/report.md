@@ -78,7 +78,7 @@ User types a message in the browser
 6. **Cannot manipulate answer format** — Regex detects format-control attempts ("answer in N words", "respond in X language"); system prompt rule #5 reinforces this.
 7. **Smart FAISS chunking** — FAISS Index 2 uses TF-IDF bigrams to retrieve the top 5 most relevant text chunks from the full dataset for each query.
 8. **Two FAISS models** — Index 1 (questions only, direct retrieval, no API call if score ≥ 0.75); Index 2 (all data, used as context for the LLM).
-9. **Interface** — Flask web application with a Harry Potter-themed chat UI ("The Oracle of Hogwarts"). Suggestion chips, typing indicator, session reset, Enter-to-send.
+9. **Interface** — Flask web application with a Harry Potter-themed chat UI ("Pensieve"). Suggestion chips, typing indicator, session reset, Enter-to-send.
 
 ---
 
