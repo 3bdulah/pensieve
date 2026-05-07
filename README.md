@@ -85,7 +85,8 @@ harry_potter_bot/
 ├── templates/
 │   └── index.html                  ← Chat UI (single-page)
 ├── report/
-│   └── report.pdf                   ← Project report
+│   └── Pensieve_Report.pdf         ← Project report
+│   └── pensieve_flow.png           ← Flow Diagram
 ├── app.py                          ← Flask web server
 ├── chatbot.py                      ← Core chatbot logic
 ├── build_index.py                  ← One-time index builder
