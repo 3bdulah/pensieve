@@ -1,4 +1,4 @@
-# 🪄 Pensieve — Harry Potter Chatbot
+# 🧙 Pensieve — Harry Potter Chatbot
 
 > A retrieval-augmented chatbot that answers questions strictly from a Harry Potter knowledge base, powered by dual FAISS indexing and the Qwen LLM.
 
@@ -87,6 +87,8 @@ harry_potter_bot/
 ├── report/
 │   └── Pensieve_Report.pdf         ← Project report
 │   └── pensieve_flow.png           ← Flow Diagram
+├── presentation/
+│   └── Pensieve_Presentation       ← Project presentation
 ├── app.py                          ← Flask web server
 ├── chatbot.py                      ← Core chatbot logic
 ├── build_index.py                  ← One-time index builder
