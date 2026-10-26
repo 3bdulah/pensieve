@@ -8,8 +8,7 @@
 | **University** | Bahçeşehir University                             |
 | **Course**     | COP4921 – Applied Large Language Models (2025/26) |
 | **Professor**  | Ahmet Tugrul BAYRAK                               |
-| **Students**   | Abdullah Hani Abdellatif Al-Shobaki — 2284612     |
-|                | Abdulah M. M. Abbas — 2285219                     |
+| **Contributors** | Abdullah Hani Abdellatif Al-Shobaki; Abdulah M. M. Abbas |
 
 
 ---
